@@ -1,0 +1,13 @@
+version: "3.10"
+
+services:
+    authapp:
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        container_name: authapp
+        volumes:
+            - .:/authapp
+        ports:
+            - "8001:8000"
+        entrypoint: ['sh', 'run_project.sh']
