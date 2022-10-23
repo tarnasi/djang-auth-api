@@ -100,7 +100,7 @@ endpoint api/v1
 ### Run project manually
 
 Install python on your system
-[Python Website]()
+[Python Website](https://www.python.org/)
 
 add new virtualenv in apiauth folder
 ```commandline
