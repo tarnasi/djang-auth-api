@@ -1,6 +1,5 @@
 #!/bin/sh
 
-python -m pip install -r packages.txt &&
-python manage.py makemigrations &&
-python manage.py migrate &&
+python manage.py makemigrations --noinput &&
+python manage.py migrate --noinput &&
 python manage.py runserver 0.0.0.0:8000

@@ -1,20 +1,10 @@
-import environ
-import os
-
 from pathlib import Path
 
-env = environ.Env(
-    # set casting, default value
-    DEBUG=(bool, False)
-)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = env('SECRET_KEY')
-DEBUG = env('DEBUG')
+SECRET_KEY = 'django-insecure-#&_52%5zp43w85r#1hwhz1ncf63l3!9xnh#!+ty_x(@x7kww$$'
+DEBUG = True
 ALLOWED_HOSTS = ['*']
-
-# Take environment variables from .env file
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 
 # Application definition
